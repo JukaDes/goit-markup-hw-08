@@ -176,7 +176,15 @@ body {
 /* ================= HERO  ================= */
 
 .hero {
-    background-color: var(--dark-background-color);
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-page/hero-background.jpg);
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding: 200px 0;
 }
@@ -342,8 +350,8 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.address:hover,
-.address:focus,
+.address-map:hover,
+.address-map:focus,
 .address-mail:hover,
 .address-mail:focus,
 .address-phone:hover,
