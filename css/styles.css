@@ -382,8 +382,6 @@ body {
 
 .social-list-icon {
     fill: var(--logo-grey-color);
-    width: 20px;
-    height: 20px;
 }
 
 .social-list-link:hover .social-list-icon,
@@ -429,8 +427,6 @@ body {
 
 .clients-list-icon {
     fill: var(--logo-grey-color);
-    width: 106px;
-    height: 60px;
 }
 
 .clients-list-link:hover .clients-list-icon,
@@ -620,8 +616,6 @@ body {
 
 .footer-social-list-icon {
     fill: var(--white-titel-color);
-    width: 20px;
-    height: 20px;
 }
 
 .footer-social-list-link:hover .social-list-icon,
