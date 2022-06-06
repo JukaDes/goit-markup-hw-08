@@ -77,6 +77,16 @@ body {
     overflow: hidden;
  }
 
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--dark-titel-color);
+}
+
 /* ================= HEADER ================= */
 
 .header {
@@ -238,16 +248,6 @@ body {
 
 /* ================= FEATURES ================= */
 
-.title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 50px;
-    color: var(--dark-titel-color);
-}
-
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +268,7 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-color: #F5F4FA;
-    margin-bottom: 30px;
+   margin-bottom: 30px;
 }
 
 .icon-antenna::before {
@@ -400,44 +400,48 @@ body {
     padding-bottom: 30px;
 }
 
-/* ================= FOOTER ================= */
+/* ================= OUR CLIENTS ================= */
 
-.footer {
-    background-color: var(--dark-background-color);
-    padding: 60px 0;
+
+.clients-list {
+    display: flex;
+    justify-content: center;
 }
 
-.address-footer {
-    margin-top: 20px;
+.clients-list-item:not(:nth-child(6n)) {
+    margin-right: 30px;
 }
 
-.address-list-item:not(:last-child) {
-    margin-bottom: 9px;
+.clients-list-item {
+    display: flex;
 }
 
-.address-map {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+.clients-list-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--logo-grey-color);
+    border-radius: 4px;
 }
 
-.address-mail,
-.address-phone {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border: 1px solid var(--accent-color);
 }
 
-.address-map:hover,
-.address-map:focus,
-.address-mail:hover,
-.address-mail:focus,
-.address-phone:hover,
-.address-phone:focus {
-    color: var(--accent-color);
+.clients-list-icon {
+    fill: var(--logo-grey-color);
+    width: 106px;
+    height: 60px;
 }
+
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+    fill: var(--accent-color);
+}
+
 
 /* ================= PORTFOLIO ================= */
 
@@ -471,8 +475,6 @@ body {
 .filter-list-item:not(:last-child) {
     margin-right: 8px;
 }
-
-
 
 .filter {
     font-family: inherit;
@@ -533,4 +535,46 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: var(--dark-background-color);
+    padding: 60px 0;
+}
+
+.address-footer {
+    margin-top: 20px;
+}
+
+.address-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-map {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.address-mail,
+.address-phone {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-map:hover,
+.address-map:focus,
+.address-mail:hover,
+.address-mail:focus,
+.address-phone:hover,
+.address-phone:focus {
+    color: var(--accent-color);
 }
