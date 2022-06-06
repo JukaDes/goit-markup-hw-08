@@ -6,6 +6,7 @@
     --white-background-color: #FFFFFF;
     --grey-background-color: #F5F4FA;
     --accent-color: #2196F3;
+    --logo-grey-color: #AFB1B8;
 }
 
 /* ================= BROWSER STYLES RESET =================*/
@@ -173,6 +174,20 @@ body {
     margin-right: 30px;
 }
 
+.contacts-icon {
+    margin-right: 10px;
+    fill: var(--text-color);
+}
+
+.header-email:hover .contacts-icon,
+.header-email:focus .contacts-icon,
+.header-phone:hover .contacts-icon,
+.header-phone:focus .contacts-icon {
+    fill: var(--accent-color);
+}
+
+
+
 /* ================= HERO  ================= */
 
 .hero {
@@ -246,6 +261,32 @@ body {
     margin-right: 30px;
 }
 
+.features-list-item::before {
+   display: block;
+   content: "";
+   height: 120px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/main-page/optimized-icons/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/main-page/optimized-icons/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/main-page/optimized-icons/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/main-page/optimized-icons/astronaut.svg);
+}
+
 .features-list-item-title {
     font-weight: 700;
     font-size: 14px;
@@ -313,6 +354,45 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-list-item {
+    display: flex;
+}
+
+.social-list-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-list-icon {
+    fill: var(--logo-grey-color);
+    width: 20px;
+    height: 20px;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+    fill: var(--light-titel-color);
 }
 
 .team-item-text-conteiner {
