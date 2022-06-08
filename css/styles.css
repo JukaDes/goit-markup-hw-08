@@ -158,6 +158,8 @@ body {
 }
 
 .header-email {
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
@@ -166,6 +168,8 @@ body {
 }
 
 .header-phone {
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
@@ -261,30 +265,14 @@ body {
     margin-right: 30px;
 }
 
-.features-list-item::before {
-   display: block;
-   content: "";
-   height: 120px;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-color: #F5F4FA;
-   margin-bottom: 30px;
-}
-
-.icon-antenna::before {
-    background-image: url(../images/main-page/optimized-icons/antenna.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../images/main-page/optimized-icons/clock.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/main-page/optimized-icons/diagram.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/main-page/optimized-icons/astronaut.svg);
+.features-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .features-list-item-title {
@@ -550,6 +538,7 @@ body {
 
 .footer-size {
     display: flex;
+    align-items: baseline;
 }
 
 .address-footer {
@@ -585,7 +574,6 @@ body {
 }
 
 .footer-social {
-    margin-top: 12px;
     margin-left: 70px;
 }
 
