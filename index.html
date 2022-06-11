@@ -46,7 +46,7 @@
         <section>
             <div class="hero">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -104,13 +104,23 @@
             <h2 class="title">Чем мы занимаемся</h2>
             <ul class="what-we-do-list list">
                 <li class="what-we-do-list-item">
-                    <img src="./images/main-page/what-we-do/pic1.jpg" alt="Код на планшете" width="370">
+                    <div class="what-we-do-conteiner">
+                        <img src="./images/main-page/what-we-do/pic1.jpg" alt="Код на планшете" width="370">
+                        <p class="what-we-do-text">Десктопные приложения</p>
+                    </div>
                 </li>
                 <li class="what-we-do-list-item">
-                    <img src="./images/main-page/what-we-do/pic2.jpg" alt="Дизайн приложения" width="370">
+                    <div class="what-we-do-conteiner">
+                        <img src="./images/main-page/what-we-do/pic2.jpg" alt="Дизайн приложения" width="370">
+                        <p class="what-we-do-text">Мобильные приложения</p>
+                    </div>
+                    
                 </li>
                 <li class="what-we-do-list-item">
-                    <img src="./images/main-page/what-we-do/pic3.jpg" alt="Палитра цвета" width="370">
+                    <div class="what-we-do-conteiner">
+                        <img src="./images/main-page/what-we-do/pic3.jpg" alt="Палитра цвета" width="370">
+                        <p class="what-we-do-text">Дизайнерские решения</p>
+                    </div>
                 </li>
             </ul>
         </div> 
@@ -374,6 +384,18 @@
             </div>
         </div>
     </footer>
+
+<!-- Backdrop + modal button -->
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="" width="18" height="18">
+                    <use href="./images/main-page/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
 </body>
 </html>
