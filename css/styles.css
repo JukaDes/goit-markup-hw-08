@@ -546,8 +546,8 @@ body {
     transition: transform 250ms var(--cubic) 0ms;
     }
     
-.project-img-overlay:hover .project-img-text,
-.project-img-overlay:focus .project-img-text {
+.project-link:hover .project-img-text,
+.project-link:focus .project-img-text {
     transform: translateY(0%);
     }
 
