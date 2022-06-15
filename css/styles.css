@@ -703,10 +703,12 @@ body {
 
 .modal {
     position: absolute;
+    display: flex;
     top: 50%;
     left: 50%;
     width: 528px;
     height: 581px;
+    padding: 40px;
     background-color: var(--white-background-color);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic) 0ms, scale 250ms var(--cubic) 0ms;
@@ -726,4 +728,44 @@ body {
     padding: 0;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.form {
+    margin-bottom: 20px;
+
+}
+
+.modal-title {
+    color: var(--dark-titel-color);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.form-label {
+    position: relative;
+    height: 58px;
+    margin-bottom: 10px;
+}
+
+.form-label-name {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.form-input-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
