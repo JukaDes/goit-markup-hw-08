@@ -12,6 +12,11 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     transition: color 250ms var(--cubic) 0ms;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address-mail,
@@ -21,13 +26,9 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--cubic) 0ms;
-}
 
-.address-map:hover,
-.address-map:focus,
-.address-mail:hover,
-.address-mail:focus,
-.address-phone:hover,
-.address-phone:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }

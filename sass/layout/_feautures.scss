@@ -5,11 +5,13 @@
 
 .features-list-item {
     width: 270px;
+
+    &:not(:nth-child(4n)) {
+            margin-right: 30px;
+        }
 }
 
-.features-list-item:not(:nth-child(4n)) {
-    margin-right: 30px;
-}
+
 
 .features-icon-box {
     display: flex;

@@ -37,9 +37,10 @@
     min-width: 200px;
     padding: 10px 32px;
     transition: background-color 250ms var(--cubic) 0ms;
+
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+        }
 }
 
-.hero__button:hover,
-.hero__button:focus {
-    background-color: #188CE8;
-}

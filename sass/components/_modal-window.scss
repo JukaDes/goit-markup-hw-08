@@ -7,6 +7,10 @@
     background-color: var(--white-background-color);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic) 0ms, scale 250ms var(--cubic) 0ms;
+
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
 }
 
 .modal__close-btn {
