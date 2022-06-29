@@ -393,11 +393,11 @@ body {
     justify-content: center;
 }
 
-.social-list-item:not(:last-child) {
+.social-list__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social-list-link {
+.social-list__link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -407,18 +407,18 @@ body {
     transition: background-color 250ms var(--cubic) 0ms;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
     background-color: var(--accent-color);
 }
 
-.social-list-icon {
+.social-list__icon {
     fill: var(--logo-grey-color);
     transition: fill 250ms var(--cubic) 0ms;
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
     fill: var(--white-titel-color);
 }
 
@@ -634,7 +634,7 @@ body {
     margin-left: 70px;
 }
 
-.footer-social-links-title {
+.footer-social__links-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -644,16 +644,16 @@ body {
     margin-bottom: 20px;
 }
 
-.footer-social-list {
+.footer-social__list {
     display: flex;
     justify-content: center;
 }
 
-.footer-social-list-item:not(:last-child) {
+.footer-social__list-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.footer-social-list-link {
+.footer-social__list-link {
     display: flex;
     width: 44px;
     height: 44px;
@@ -664,18 +664,18 @@ body {
     transition: background-color 250ms var(--cubic) 0ms;
 }
 
-.footer-social-list-link:hover,
-.footer-social-list-link:focus {
+.footer-social__list-link:hover,
+.footer-social__list-link:focus {
     background-color: var(--accent-color);
 }
 
-.footer-social-list-icon {
+.footer-social__list-icon {
     fill: var(--white-titel-color);
     transition: fill 250ms var(--cubic) 0ms;
 }
 
-.footer-social-list-link:hover .social-list-icon,
-.footer-social-list-link:focus .social-list-icon {
+.footer-social__list-link:hover .social-list-icon,
+.footer-social__list-link:focus .social-list-icon {
     fill: var(--white-titel-color);
 }
 
