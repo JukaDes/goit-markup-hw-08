@@ -430,20 +430,20 @@ body {
 /* ================= OUR CLIENTS ================= */
 
 
-.clients-list {
+.clients__list {
     display: flex;
     justify-content: center;
 }
 
-.clients-list-item:not(:nth-child(6n)) {
+.clients__list-item:not(:nth-child(6n)) {
     margin-right: 30px;
 }
 
-.clients-list-item {
+.clients__list-item {
     display: flex;
 }
 
-.clients-list-link {
+.clients__list-link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -454,18 +454,18 @@ body {
     transition: border 250ms var(--cubic) 0ms;
 }
 
-.clients-list-link:hover,
-.clients-list-link:focus {
+.clients__list-link:hover,
+.clients__list-link:focus {
     border: 1px solid var(--accent-color);
 }
 
-.clients-list-icon {
+.clients__list-icon {
     fill: var(--logo-grey-color);
     transition: fill 250ms var(--cubic) 0ms;
 }
 
-.clients-list-link:hover .clients-list-icon,
-.clients-list-link:focus .clients-list-icon {
+.clients__list-link:hover .clients__list-icon,
+.clients__list-link:focus .clients__list-icon {
     fill: var(--accent-color);
 }
 
