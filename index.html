@@ -15,22 +15,22 @@
     <header class="header">
         <div class="header__conteiner conteiner">
             <nav class="navigation">
-                <a class="logo link" href="index.html" lang="en"><span class="logo-web">Web</span><span
-                        class="logo-studio-black">Studio</span></a>
-                <ul class="menu list">
-                    <li class="menu__item"><a class="menu__link current link" href="./index.html">Студия</a></li>
-                    <li class="menu__item"><a class="menu__link link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="menu__item"><a class="menu__link link" href="">Контакты</a></li>
+                <a class="logo" href="index.html" lang="en"><span class="logo__web">Web</span><span
+                        class="logo__studio--black">Studio</span></a>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link menu__link--current" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="menu__contacts list">
-                <li class="menu__contacts-email"><a class="header__email link" href="mailto:info@devstudio.com">
-                    <svg class="contacts-icon" width="16" height="12">
+            <ul class="contacts">
+                <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts__icon" width="16" height="12">
                         <use href="./images/main-page/sprite.svg#mail"></use>
                     </svg>
                         info@devstudio.com</a></li>
-                <li class="menu__contacts-phone"><a class="header__phone link" href="tel:+380961111111">
-                    <svg class="contacts-icon" width="10" height="16">
+                <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts__icon" width="10" height="16">
                         <use href="./images/main-page/sprite.svg#phone"></use>
                     </svg>
                     +38 096 111 11 11</a></li>
@@ -50,7 +50,7 @@
     <section class="features section">
         <div class="conteiner">
             <h2 class="title visually-hidden">Особенности компании</h2>
-            <ul class="features-list list">
+            <ul class="features-list">
                 <li class="features-list-item icon-antenna">
                     <div class="features-icon-box">
                         <svg class="features-icon" width="70" height="70">
@@ -98,7 +98,7 @@
     <section class="what-we-do section">
         <div class="conteiner">
             <h2 class="title">Чем мы занимаемся</h2>
-            <ul class="what-we-do-list list">
+            <ul class="what-we-do-list">
                 <li class="what-we-do-list-item">
                     <div class="what-we-do-conteiner">
                         <img src="./images/main-page/what-we-do/pic1.jpg" alt="Код на планшете" width="370">
@@ -126,13 +126,13 @@
     <section class="team section">
         <div class="conteiner">
             <h2 class="title">Наша команда</h2>
-            <ul class="team-list list">
+            <ul class="team-list">
                 <li class="team-list-item">
                     <img src="./images/main-page/team/img1.jpg" alt="Портрет" width="270">
                     <div class="team-item-text-conteiner">
                         <h3 class="team-list-item-title">Игорь Демьяненко</h3>
                         <p class="team-item-text">Product Designer</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link">
                                     <svg class="social-list__icon" width="20" height="20">
@@ -169,7 +169,7 @@
                     <div class="team-item-text-conteiner">
                         <h3 class="team-list-item-title">Ольга Репина</h3>
                         <p class="team-item-text">Frontend Developer</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link">
                                     <svg class="social-list__icon" width="20" height="20">
@@ -206,7 +206,7 @@
                     <div class="team-item-text-conteiner">
                         <h3 class="team-list-item-title">Николай Тарасов</h3>
                         <p class="team-item-text">Marketing</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link">
                                     <svg class="social-list__icon" width="20" height="20">
@@ -243,7 +243,7 @@
                     <div class="team-item-text-conteiner">
                         <h3 class="team-list-item-title">Михаил Ермаков</h3>
                         <p class="team-item-text">UI Designer</p>
-                        <ul class="social-list list">
+                        <ul class="social-list">
                             <li class="social-list__item">
                                 <a href="" class="social-list__link">
                                     <svg class="social-list__icon" width="20" height="20">
@@ -283,7 +283,7 @@
     <section class="clients section">
         <div class="conteiner">
             <h2 class="title">Постоянные клиенты</h2>
-            <ul class="clients__list list">
+            <ul class="clients__list">
                 <li class="clients__list-item">
                     <a class="clients__list-link" href="">
                         <svg class="clients__list-icon" width="106" height="60">
@@ -334,20 +334,20 @@
     <footer class="footer">
         <div class="footer-size conteiner">
             <div class="footer-contacts-conteiner">
-                <a class="logo link" href="index.html" lang="en">
-                    <span class="logo-web">Web</span>
-                    <span class="logo-studio-white">Studio</span></a>
+                <a class="logo" href="index.html" lang="en">
+                    <span class="logo__web">Web</span>
+                    <span class="logo__studio--white">Studio</span></a>
                 <address class="address-footer">
-                    <ul class="address-list list">
-                        <li class="address-list-item"><a class="address-map link" href="https://goo.gl/maps/8wRMJYcDEy7sv4ex5" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li class="address-list-item"><a class="address-mail link" href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="address-list-item"><a class="address-phone link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <ul class="address-list">
+                        <li class="address-list-item"><a class="address-map" href="https://goo.gl/maps/8wRMJYcDEy7sv4ex5" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address-list-item"><a class="address-mail" href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="address-list-item"><a class="address-phone" href="tel:+380991111111">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
             <div class="footer-social">
                 <h3 class="footer-social__links-title">Присоединяйтесь</h3>
-                <ul class="footer-social__list list">
+                <ul class="footer-social__list">
                     <li class="footer-social__list-item">
                         <a href="" class="footer-social__list-link">
                             <svg class="footer-social__list-icon" width="20" height="20">
