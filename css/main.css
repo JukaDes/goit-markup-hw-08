@@ -623,19 +623,19 @@ body {
   padding-bottom: 30px;
 }
 
-.clients__list {
+.clients {
   display: flex;
   justify-content: center;
 }
 
-.clients__list-item {
+.clients__item {
   display: flex;
 }
-.clients__list-item:not(:nth-child(6n)) {
+.clients__item:not(:nth-child(6n)) {
   margin-right: 30px;
 }
 
-.clients__list-link {
+.clients__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -645,15 +645,15 @@ body {
   border-radius: 4px;
   transition: border 250ms var(--cubic) 0ms;
 }
-.clients__list-link:hover, .clients__list-link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients__list-icon {
+.clients__icon {
   fill: var(--logo-grey-color);
   transition: fill 250ms var(--cubic) 0ms;
 }
-.clients__list-link:hover .clients__list-icon, .clients__list-link:focus .clients__list-icon {
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 

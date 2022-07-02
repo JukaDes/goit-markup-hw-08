@@ -1,9 +1,9 @@
-.clients__list {
+.clients {
     display: flex;
     justify-content: center;
 }
 
-.clients__list-item {
+.clients__item {
     display: flex;
 
     &:not(:nth-child(6n)) {
@@ -11,7 +11,7 @@
         }
 }
 
-.clients__list-link {
+.clients__link {
     display: flex;
     width: 170px;
     height: 92px;
@@ -27,12 +27,12 @@
         }
 }
 
-.clients__list-icon {
+.clients__icon {
     fill: var(--logo-grey-color);
     transition: fill 250ms var(--cubic) 0ms;
 
-    .clients__list-link:hover &,
-    .clients__list-link:focus & {
+    .clients__link:hover &,
+    .clients__link:focus & {
             fill: var(--accent-color);
         }
 }
