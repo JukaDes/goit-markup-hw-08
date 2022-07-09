@@ -23,11 +23,6 @@
                     <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <button type="button" class="mobile-menu-open-btn">
-                <svg class="mobile-menu-open-btn__icon" width="40" height="40">
-                    <use href="./images/main-page/sprite.svg#burger"></use>
-                </svg>
-            </button>
             <ul class="contacts">
                 <li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">
                     <svg class="contacts__icon" width="16" height="12">
@@ -40,27 +35,32 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="mobile-menu__open-btn" data-menu-open>
+                <svg class="mobile-menu__open-icon" width="40" height="40">
+                    <use href="./images/main-page/sprite.svg#burger"></use>
+                </svg>
+            </button>
         </div>
-            <div class="mobile-menu">
+            <!-- <div class="mobile-menu" data-menu>
                 <div class="container mobile-menu__container">
-                    <button type="button" class="mobile-menu__close-btn">
-                    <svg class="mobile-menu__close-icon" width="40" height="40">
-                        <use href="./images/main-page/sprite.svg#close"></use>
-                    </svg>
-                    </button>
                     <ul>
                         <li>
-                            <a href="">Студия</a>
+                            <a href="./index.html">Студия</a>
                         </li>
                         <li>
-                            <a href="">Портфолио</a>
+                            <a href="./portfolio.html">Портфолио</a>
                         </li>
                         <li>
                             <a href="">Контакты</a>
                         </li>
                     </ul>
+                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="mobile-menu__close-icon" width="40" height="40">
+                            <use href="./images/main-page/sprite.svg#close"></use>
+                        </svg>
+                    </button>
                 </div>
-            </div>
+            </div> -->
                 
     </header>
     <main>
@@ -473,5 +473,6 @@
     </div> -->
 
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>
