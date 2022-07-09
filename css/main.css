@@ -1018,7 +1018,7 @@ body {
   margin-left: auto;
 }
 
-.footer-subscribe-text {
+.footer-subscribe__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1029,15 +1029,15 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-subscribe-form {
+.footer-subscribe__form {
   display: flex;
 }
 
-.footer-subscribe-label {
+.footer-subscribe__label {
   margin-right: 12px;
 }
 
-.footer-subscire-input {
+.footer-subscire__input {
   background-color: transparent;
   color: var(--white-titel-color);
   width: 358px;
@@ -1047,18 +1047,18 @@ body {
   border-radius: 4px;
   transition: border-color 250ms var(--cubic) 0ms;
 }
-.footer-subscire-input:hover, .footer-subscire-input:focus {
+.footer-subscire__input:hover, .footer-subscire__input:focus {
   outline: none;
   border-color: var(--white-titel-color);
 }
-.footer-subscire-input::placeholder {
+.footer-subscire__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-subscribe-button {
+.footer-subscribe__button {
   color: var(--white-titel-color);
   font-family: inherit;
   font-weight: 700;
@@ -1077,11 +1077,11 @@ body {
   padding: 10px 28px;
   transition: background-color 250ms var(--cubic) 0ms;
 }
-.footer-subscribe-button:hover, .footer-subscribe-button:focus {
+.footer-subscribe__button:hover, .footer-subscribe__button:focus {
   background-color: #188CE8;
 }
 
-.footer-subscribe-button-icon {
+.footer-subscribe__button-icon {
   fill: var(--white-titel-color);
   margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
