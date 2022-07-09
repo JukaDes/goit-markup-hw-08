@@ -79,19 +79,13 @@
 
 @media screen and (min-width: 1200px) {
     .footer-subscribe {
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 
     .footer-subscribe__form {
         display: flex;
     }
-
-    // .footer-subscribe__form {
-    //     display: block;
-    //     text-align: center;
-    //     align-items: center;
-    // }
 
     .footer-subscribe__label {
         margin-right: 12px;
