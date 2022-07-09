@@ -1,12 +1,12 @@
-.address-footer {
+.address {
     margin-top: 20px;
 }
 
-.address-list-item:not(:last-child) {
-    margin-bottom: 9px;
+.address__item:not(:last-child) {
+    margin-bottom: 8px;
 }
 
-.address-map {
+.address__map {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -19,8 +19,8 @@
     }
 }
 
-.address-mail,
-.address-phone {
+.address__mail,
+.address__phone {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -32,3 +32,10 @@
         color: var(--accent-color);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .address__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+

@@ -1,9 +1,23 @@
 .footer {
     background-color: var(--dark-background-color);
     padding: 60px 0;
+    text-align: center;
 }
 
-.footer-size {
-    display: flex;
-    align-items: baseline;
+@media screen and (min-width: 768px) {
+    .footer__tablet-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        text-align: left;
+    }
+    
+    .footer__desktop-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
 }
