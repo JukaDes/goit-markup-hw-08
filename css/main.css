@@ -532,7 +532,7 @@ body {
   transition: border 250ms var(--cubic) 0ms;
 }
 .form__checkbox:checked + .form__checkbox-label::before {
-  background-image: url(../images/main-page/checkbox.svg);
+  background-image: url(../images/checkbox.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -720,8 +720,7 @@ body {
   }
 }
 .hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 118px 60px;
   background-color: #2f303a;
   text-align: center;
   max-width: 1600px;
@@ -1146,6 +1145,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--white-titel-color);
   transition: bottom 250ms var(--cubic) 0ms;
+  opacity: 0;
 }
 .project__link:hover .project__img-text, .project__link:focus .project__img-text {
   bottom: 0;

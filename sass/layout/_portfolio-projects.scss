@@ -2,7 +2,6 @@
     margin-bottom: 30px;
 }
 
-
 .project__link {
     display: flex;
     flex-direction: column;
@@ -49,6 +48,7 @@
     letter-spacing: 0.03em;
     color: var(--white-titel-color);
     transition: bottom 250ms var(--cubic) 0ms;
+    opacity: 0;
 
     .project__link:hover &,
     .project__link:focus & {

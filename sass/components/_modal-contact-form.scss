@@ -108,7 +108,7 @@
             transition: border 250ms var(--cubic) 0ms;
 
             .form__checkbox:checked+& {
-                    background-image: url(../images/main-page/checkbox.svg);
+                    background-image: url(../images/checkbox.svg);
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
