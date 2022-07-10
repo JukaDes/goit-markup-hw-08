@@ -5,6 +5,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--white-background-color);
+    transition: opacity 250ms var(--cubic) 0ms, visibility 250ms var(--cubic) 0ms;
 
     opacity: 0;
     visibility: hidden;
@@ -139,5 +140,12 @@
     .mobile-menu__close-btn:hover &,
     .mobile-menu__close-btn:focus & {
             fill: var(--accent-color);
+        }
+}
+
+@media screen and (max-width: 400px) {
+    .mobile-menu__phone,
+    .mobile-menu__email {
+            font-size: 24px;
         }
 }

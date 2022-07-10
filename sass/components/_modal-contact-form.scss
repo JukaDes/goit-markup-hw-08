@@ -89,8 +89,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--text-color);
     align-self: center;
@@ -153,5 +153,10 @@
 @media screen and (min-width: 1200px) {
     .modal__title {
         line-height: 1.15;
+    }
+    .form__checkbox-label {
+        
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
