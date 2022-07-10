@@ -798,39 +798,45 @@ body {
   }
 }
 .what-we-do {
-  padding-top: 0;
+  display: none;
 }
 
-.what-we-do-list {
-  display: flex;
-  position: relative;
-}
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+    padding-top: 0;
+  }
 
-.what-we-do-list-item:not(:last-child) {
-  margin-right: 30px;
-}
+  .what-we-do-list {
+    display: flex;
+    position: relative;
+  }
 
-.what-we-do-container {
-  position: relative;
-}
+  .what-we-do-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.what-we-do-text {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 70px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-titel-color);
-  background-color: rgba(47, 48, 58, 0.8);
-}
+  .what-we-do-container {
+    position: relative;
+  }
 
+  .what-we-do-text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-titel-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
 .team {
   background-color: var(--grey-background-color);
 }
