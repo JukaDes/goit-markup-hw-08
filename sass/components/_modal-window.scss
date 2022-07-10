@@ -2,15 +2,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 581px;
+    width: 100%;
     background-color: var(--white-background-color);
+    border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic) 0ms, scale 250ms var(--cubic) 0ms;
 
     .backdrop.is-hidden & {
-            transform: translate(-50%, -50%) scale(1.2);
-        }
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }
 
 .modal__close-btn {
@@ -27,4 +27,27 @@
     padding: 0;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.modal__close-icon {
+    transition: fill 250ms var(--cubic) 0ms;
+
+    .modal__close-btn:hover &,
+    .modal__close-btn:focus & {
+            fill: var(--accent-color);
+        }
+}
+
+@media screen and (min-width: 450px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+            width: 528px;
+            height: 581px;
+        }
 }

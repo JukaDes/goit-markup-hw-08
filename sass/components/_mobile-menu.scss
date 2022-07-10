@@ -111,11 +111,16 @@
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
 }
 
-.mobile-menu__open-btn:hover .mobile-menu__open-icon,
-.mobile-menu__open-btn:focus .mobile-menu__open-icon {
-    fill: var(--accent-color);
+.mobile-menu__open-icon {
+    transition: fill 250ms var(--cubic) 0ms;
+
+    .mobile-menu__open-btn:hover &,
+    .mobile-menu__open-btn:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .mobile-menu__close-btn {
@@ -126,9 +131,13 @@
     background-color: transparent;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
 }
 
-.mobile-menu__close-btn:hover .mobile-menu__close-icon,
-.mobile-menu__close-btn:focus .mobile-menu__close-icon {
-    fill: var(--accent-color);
+.mobile-menu__close-icon {
+    transition: fill 250ms var(--cubic) 0ms;
+    .mobile-menu__close-btn:hover &,
+    .mobile-menu__close-btn:focus & {
+            fill: var(--accent-color);
+        }
 }

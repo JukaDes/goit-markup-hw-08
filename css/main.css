@@ -267,10 +267,13 @@ body {
   background-color: transparent;
   padding: 0;
   line-height: 0;
+  cursor: pointer;
 }
 
-.mobile-menu__open-btn:hover .mobile-menu__open-icon,
-.mobile-menu__open-btn:focus .mobile-menu__open-icon {
+.mobile-menu__open-icon {
+  transition: fill 250ms var(--cubic) 0ms;
+}
+.mobile-menu__open-btn:hover .mobile-menu__open-icon, .mobile-menu__open-btn:focus .mobile-menu__open-icon {
   fill: var(--accent-color);
 }
 
@@ -282,10 +285,13 @@ body {
   background-color: transparent;
   padding: 0;
   line-height: 0;
+  cursor: pointer;
 }
 
-.mobile-menu__close-btn:hover .mobile-menu__close-icon,
-.mobile-menu__close-btn:focus .mobile-menu__close-icon {
+.mobile-menu__close-icon {
+  transition: fill 250ms var(--cubic) 0ms;
+}
+.mobile-menu__close-btn:hover .mobile-menu__close-icon, .mobile-menu__close-btn:focus .mobile-menu__close-icon {
   fill: var(--accent-color);
 }
 
@@ -329,9 +335,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
   background-color: var(--white-background-color);
+  border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic) 0ms, scale 250ms var(--cubic) 0ms;
 }
@@ -355,6 +361,25 @@ body {
   cursor: pointer;
 }
 
+.modal__close-icon {
+  transition: fill 250ms var(--cubic) 0ms;
+}
+.modal__close-btn:hover .modal__close-icon, .modal__close-btn:focus .modal__close-icon {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -365,7 +390,7 @@ body {
   color: var(--dark-titel-color);
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -498,6 +523,11 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
+}
 .menu {
   display: none;
 }

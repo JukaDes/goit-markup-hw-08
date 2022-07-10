@@ -9,7 +9,7 @@
     color: var(--dark-titel-color);
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
@@ -40,8 +40,6 @@
             border-color: var(--accent-color);
         }
 }
-
-
 
 .form__input-icon {
     position: absolute;
@@ -78,8 +76,6 @@
             border-color: var(--accent-color);
         }
 }
-
-
 
 .form__input::placeholder,
 .form__text::placeholder {
@@ -126,8 +122,6 @@
         }   
 }
 
-
-
 .form__policy-link {
     color: var(--accent-color);
 }
@@ -156,3 +150,8 @@
         }
 }
 
+@media screen and (min-width: 1200px) {
+    .modal__title {
+        line-height: 1.15;
+    }
+}
