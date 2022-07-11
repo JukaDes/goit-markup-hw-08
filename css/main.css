@@ -1173,6 +1173,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 450px) {
+  .project__img-text {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .project {
     display: flex;
@@ -1195,7 +1201,7 @@ body {
   }
 
   .project__img-text {
-    padding: 49px 24px 77px 24px;
+    padding: 49px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
