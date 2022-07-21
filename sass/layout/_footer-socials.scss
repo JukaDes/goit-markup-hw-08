@@ -44,13 +44,13 @@
 
 @media screen and (min-width: 768px) {
     .footer-social {
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
 .footer-social {
         margin-left: 70px;
+        margin-top: 0;
     }
 }

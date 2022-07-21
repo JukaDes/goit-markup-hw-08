@@ -8,6 +8,7 @@
     transition: opacity 250ms var(--cubic) 0ms, visibility 250ms var(--cubic) 0ms;
 
     opacity: 0;
+    z-index: 1;
     visibility: hidden;
     pointer-events: none;
 }
@@ -51,9 +52,10 @@
 
 .mobile-menu__contacts {
     margin-bottom: 64px;
+    margin-top: auto;
 }
 
-.mobile-menu__contact-item:not(:last-child) {
+.mobile-menu__contacts-item:not(:last-child) {
     margin-bottom: 32px;
 }
 
